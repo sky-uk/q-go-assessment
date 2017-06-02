@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux-immutable';
+import { combineReducers } from 'redux';
 import reducer from '../logic/reducer';
 
 export default function createReducer() {
