@@ -18,7 +18,7 @@ export default function configureStore(initialState = {}) {
 
   if (module.hot) {
     module.hot.accept('./reducers', () => {
-      System.import('./reducers').then((reducerModule) => {
+      import('./reducers').then((reducerModule) => {
         const createReducers = reducerModule.default;
         const nextReducers = createReducers();
         store.replaceReducer(nextReducers);
@@ -26,6 +26,5 @@ export default function configureStore(initialState = {}) {
     });
   }
 
-  console.info('Redux: Store Initialised.');
   return store;
 }
