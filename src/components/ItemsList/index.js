@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import './styles.css';
 
-export function ItemsList({ items }) {
+export const ItemsList = ({ items }) => {
   return (
     <div>
       <ul className={'itemsList-ul'}>
@@ -12,7 +12,7 @@ export function ItemsList({ items }) {
       </ul>
     </div>
   );
-}
+};
 
 ItemsList.propTypes = {
   items: PropTypes.array.isRequired,

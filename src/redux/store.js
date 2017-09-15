@@ -6,10 +6,12 @@ const composeEnhancers =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
 
-export default function configureStore(initialState = {}) {
+const configureStore = (initialState = {}) => {
   return createStore(
     createReducer(),
     initialState,
     composeEnhancers(applyMiddleware())
   );
-}
+};
+
+export default configureStore;

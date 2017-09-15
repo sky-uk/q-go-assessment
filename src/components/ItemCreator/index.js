@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { addItem } from '../../logic/actions';
 import './styles.css';
 
-export function ItemCreator({ onAdd }) {
+export const ItemCreator = ({ onAdd }) => {
   let inputField;
 
   return (
@@ -28,7 +28,7 @@ export function ItemCreator({ onAdd }) {
       />
     </div>
   );
-}
+};
 
 ItemCreator.propTypes = {
   onAdd: PropTypes.func.isRequired,
