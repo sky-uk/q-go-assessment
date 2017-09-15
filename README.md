@@ -31,6 +31,26 @@ Don't worry about making it look nice, or fancy CSS effects. We're happy with
 unstyled buttons and elements. We'll be focusing on the code more than the
 presentation.
 
+## Getting Started
+
+To install the required dependencies we recommend using `yarn`:
+
+```
+yarn
+```
+
+You can then start the app with:
+
+```
+yarn start
+```
+
+And run the tests (in watch mode) with:
+
+```
+yarn test
+```
+
 ## Tasks
 
 We'd like you to make the following changes to the To Do app:
