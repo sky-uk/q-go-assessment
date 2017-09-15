@@ -33,22 +33,22 @@ presentation.
 
 ## Getting Started
 
-To install the required dependencies we recommend using `yarn`:
+Install the required dependencies using npm:
 
 ```
-yarn
+npm install
 ```
 
 You can then start the app with:
 
 ```
-yarn start
+npm start
 ```
 
 And run the tests (in watch mode) with:
 
 ```
-yarn test
+npm test
 ```
 
 ## Tasks
