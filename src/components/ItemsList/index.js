@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import { selectItems } from './selectors';
 import './styles.css';
 
 export function ItemsList({ items }) {
@@ -20,8 +18,8 @@ ItemsList.propTypes = {
   items: PropTypes.array.isRequired,
 };
 
-const mapStateToProps = createStructuredSelector({
-  items: selectItems(),
-});
+const mapStateToProps = state => {
+  return { items: state.todos.items };
+};
 
 export default connect(mapStateToProps)(ItemsList);
