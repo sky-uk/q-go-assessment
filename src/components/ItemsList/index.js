@@ -11,14 +11,12 @@ export function ItemsList({ items }) {
   return (
     <div>
       <ul className={'itemsList-ul'}>
-        { items.length < 1 &&
+        {items.length < 1 && (
           <p id={'items-missing'}>
             <FormattedMessage {...messages.noItems} />
           </p>
-        }
-        { items.map(item => (
-          <li key={item.id}>{ item.content }</li>
-        )) }
+        )}
+        {items.map(item => <li key={item.id}>{item.content}</li>)}
       </ul>
     </div>
   );
@@ -30,8 +28,6 @@ ItemsList.propTypes = {
 
 const mapStateToProps = createStructuredSelector({
   items: selectItems(),
-})
+});
 
-export default connect(
-  mapStateToProps,
-)(ItemsList);
+export default connect(mapStateToProps)(ItemsList);

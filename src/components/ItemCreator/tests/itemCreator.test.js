@@ -23,9 +23,7 @@ describe('ItemCreator', () => {
   });
 
   it('should clear the input onAdd', () => {
-    const renderedItem = mount(
-      <ItemCreator {...defaultProps} />
-    );
+    const renderedItem = mount(<ItemCreator {...defaultProps} />);
     renderedItem.find('.itemCreator-input').node.value = 'New Test Item';
     renderedItem.find('.itemCreator-button').simulate('click');
     expect(renderedItem.find('.itemCreator-input').node.value).toEqual('');

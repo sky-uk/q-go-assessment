@@ -5,8 +5,8 @@ describe('ItemsList Selectors', () => {
     const mockData = {
       todos: {
         items: [
-          { id: 1, content: 'Test Item 1'},
-          { id: 2, content: 'Test Item 2'},
+          { id: 1, content: 'Test Item 1' },
+          { id: 2, content: 'Test Item 2' },
         ],
       },
     };
