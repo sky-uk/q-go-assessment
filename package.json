@@ -7,7 +7,6 @@
     "prop-types": "15.5.10",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "react-intl": "2.4.0",
     "react-redux": "5.0.6",
     "react-test-renderer": "15.6.1",
     "redux": "3.7.2",
