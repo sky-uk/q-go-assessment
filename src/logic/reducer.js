@@ -1,5 +1,7 @@
 import { ADD_ITEM } from './constants';
 
+let nextId = 3;
+
 export const initialState = {
   items: [
     { id: 1, content: 'Make sure items are completeable' },
@@ -7,17 +9,18 @@ export const initialState = {
   ],
 };
 
-function reducer(state = initialState, action) {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ITEM:
-      const oldItems = state.items;
-      const newItems = [...oldItems, {
-        id: oldItems.length + 1,
+      const newItem = {
+        id: nextId++,
         content: action.content,
-      }];
-      return Object.assign({}, state, {
-        items: newItems,
-      });
+      };
+
+      return {
+        ...state,
+        items: [...state.items, newItem],
+      };
     default:
       return state;
   }

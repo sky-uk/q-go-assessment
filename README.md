@@ -1,27 +1,76 @@
-## QGO Desktop Assessment
+# QGO Desktop Assessment
 
-### Overview
+## Overview
 
-The intention for this test is to identify skills we are looking for in our
-developers. You're welcome to use the internet to complete the assessment, but
-we'd prefer you don't just grab large chunks of code from stack overflow.
+Thanks for your interest a development role on the QGO Desktop team!
 
-Time: 1 Hour.
+We'd like you to complete this short technical test before we bring you in for
+an in person interview. It's a chance to show off your skills and show us how
+you approach development.
 
-Tasks:
-  1. Add the ability to complete items and show them as complete.
-  2. Add the ability to filter items, using a HoC preferably.
-  3. Add the ability to delete items.
+This technical test is written in React and uses Redux for state management.
+It assumes familiarity with React and Redux. If you aren't familiar with these
+then let us know before starting the test!
 
-Areas of interest for us:
-  * Testing: Unit tests are fine, we have more levels of testing than this in
-    our project, but they're fine for the assessment.
-  * Style: We're interested to see how you adapt your code style to match the
-    standards already used in a project.
-  * HoC (Functional): We use a lot of higher order components and functional
-    patterns in our main project, we're interested to see you use these.
-  * Comments: It's hard to do all the things you'd like to in an assessment, if
-    you feel improvements could be made in an area leave a comment:
-    `// IMPROVE: Maybe do x better`.
-  * Self-sufficient: Can you find the solution to problems, without getting
-    stuck for too long without asking for help?
+You'll be working on a simple To Do app, extending it with a few new
+features.
+
+## Timing
+
+About 90 mins.
+
+If you don't get everything done in 90 mins don't worry, just send across what
+you have with a note about what is left to do. We know your time is precious
+and you don't want to spend all day on a technical test!
+
+Given the time constrain we'd rather you focused on:
+* Making it work, first and foremost!
+* Unit tests.
+
+Don't worry about making it look nice, or fancy CSS effects. We're happy with
+unstyled buttons and elements. We'll be focusing on the code more than the
+presentation.
+
+## Getting Started
+
+Install the required dependencies using npm:
+
+```
+npm install
+```
+
+You can then start the app with:
+
+```
+npm start
+```
+
+And run the tests (in watch mode) with:
+
+```
+npm test
+```
+
+## Tasks
+
+We'd like you to make the following changes to the To Do app:
+
+1. Add the ability to delete items.
+2. Be able to mark items as complete. And then toggle them back to incomplete.
+3. Add the ability to switch between viewing all items and only completed items.
+
+## Finishing up
+
+When you are finished with the test please send it back to us (either a link to
+the repo, or a zip of the project).
+
+Let us know if there are any improvements you would have made if given more time.
+
+## Notes
+
+Ideally this should feel as much like normal development as possible.
+
+* Feel free to search for any information you need.
+* You can add any libraries you need to get the job done.
+* Please contact us if you have any questions about the task, we're happy to
+  give more details!

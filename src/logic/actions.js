@@ -1,5 +1,5 @@
 import { ADD_ITEM } from './constants';
 
-export function addItem(content) {
+export const addItem = content => {
   return { type: ADD_ITEM, content };
-}
+};
