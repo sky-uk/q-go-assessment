@@ -1,3 +1,5 @@
+![Sky logo](./docs/assets/logo.png)
+
 # QGO Desktop Assessment
 
 ## Overview
@@ -57,14 +59,16 @@ We'd like you to make the following changes to the To Do app:
 
 1. Add the ability to delete items.
 2. Be able to mark items as complete. And then toggle them back to incomplete.
-3. Add the ability to switch between viewing all items and only completed items.
+3. Add a filter than can be toggled to hide completed items.
 
 ## Finishing up
 
 When you are finished with the test please send it back to us (either a link to
 the repo, or a zip of the project).
 
-Let us know if there are any improvements you would have made if given more time.
+It would be great if you could write up a short summary of how you approached
+the task, and if there are any improvements you would have made if given more
+time.
 
 ## Notes
 

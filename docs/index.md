@@ -2,6 +2,8 @@
 title: Q/Go Desktop Technical Assessment
 ---
 
+![Sky logo](./assets/logo.png)
+
 # Q/Go Desktop Technical Assessment
 
 ## Overview

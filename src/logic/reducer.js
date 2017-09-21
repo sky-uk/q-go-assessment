@@ -1,11 +1,12 @@
 import { ADD_ITEM } from './constants';
 
-let nextId = 3;
+let nextId = 4;
 
 export const initialState = {
   items: [
-    { id: 1, content: 'Make sure items are completeable' },
-    { id: 2, content: 'Add filters (Use HOC)' },
+    { id: 1, content: 'Call mum' },
+    { id: 2, content: 'Buy cat food' },
+    { id: 3, content: 'Water the plants' },
   ],
 };
 
