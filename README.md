@@ -1,3 +1,5 @@
+![Sky logo](./docs/logo.png)
+
 # QGO Desktop Assessment
 
 ## Overview
