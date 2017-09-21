@@ -57,7 +57,7 @@ We'd like you to make the following changes to the To Do app:
 
 1. Add the ability to delete items.
 2. Be able to mark items as complete. And then toggle them back to incomplete.
-3. Add the ability to switch between viewing all items and only completed items.
+3. Add a filter than can be toggled to hide completed items.
 
 ## Finishing up
 
