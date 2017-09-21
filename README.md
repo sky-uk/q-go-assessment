@@ -64,7 +64,9 @@ We'd like you to make the following changes to the To Do app:
 When you are finished with the test please send it back to us (either a link to
 the repo, or a zip of the project).
 
-Let us know if there are any improvements you would have made if given more time.
+It would be great if you could write up a short summary of how you approached
+the task, and if there are any improvements you would have made if given more
+time.
 
 ## Notes
 
