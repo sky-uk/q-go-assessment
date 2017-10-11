@@ -1,7 +1,5 @@
 import { ADD_ITEM } from './constants';
 
-let nextId = 4;
-
 export const initialState = {
   items: [
     { id: 1, content: 'Call mum' },
@@ -13,8 +11,10 @@ export const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ITEM:
+      const nextId =
+        state.items.reduce((id, item) => Math.max(item.id, id), 0) + 1;
       const newItem = {
-        id: nextId++,
+        id: nextId,
         content: action.content,
       };
 
