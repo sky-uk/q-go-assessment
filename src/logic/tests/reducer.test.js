@@ -16,10 +16,16 @@ describe('reducer', () => {
   });
 
   it('should add new items on ADD_ITEM', () => {
-    const mockAction = addItem('Test Content');
-    const result = reducer(undefined, mockAction);
-    expect(result.items).toHaveLength(4);
-    expect(result.items[3].id === 4);
-    expect(result.items[3].content === 'Test Content');
+    const state = {
+      items: [
+        { id: 1, content: 'first' },
+        { id: 2, content: 'second' },
+      ]
+    }
+    const mockAction = addItem('third');
+    const result = reducer(state, mockAction);
+    expect(result.items).toHaveLength(3);
+    expect(result.items[2].id).toEqual(3);
+    expect(result.items[2].content).toEqual('third');
   });
 });
