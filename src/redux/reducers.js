@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import reducer from '../logic/reducer';
+import reducer from '../logic/todos';
 
 export default function createReducer() {
   return combineReducers({

@@ -1,4 +1,8 @@
-import { ADD_ITEM } from './constants';
+export const ADD_ITEM = 'qgo/assessment/ADD_ITEM';
+
+export const addItem = content => {
+  return { type: ADD_ITEM, content };
+};
 
 export const initialState = {
   items: [
