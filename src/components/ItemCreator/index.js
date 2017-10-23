@@ -8,19 +8,19 @@ export const ItemCreator = ({ onAdd }) => {
   let inputField;
 
   return (
-    <div className={'itemCreator'}>
+    <div className="itemCreator">
       <input
         ref={input => {
           inputField = input;
         }}
-        className={'itemCreator-input'}
+        className="itemCreator-input"
         type="text"
-        placeholder={'What do you need to do?'}
+        placeholder="What do you need to do?"
       />
       <input
-        className={'itemCreator-button'}
+        className="itemCreator-button"
         type="button"
-        value={'Add Task'}
+        value="Add Task"
         onClick={() => {
           inputField.value && onAdd(inputField.value);
           inputField.value = '';
