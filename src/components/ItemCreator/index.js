@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addItem } from '../../logic/actions';
+import { addItem } from '../../logic/todos';
 import './styles.css';
 
 export const ItemCreator = ({ onAdd }) => {
