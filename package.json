@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "enzyme": "2.9.1",
-    "prop-types": "15.5.10",
-    "react": "15.6.1",
-    "react-dom": "15.6.1",
-    "react-redux": "5.0.6",
-    "react-test-renderer": "15.6.1",
-    "redux": "3.7.2",
-    "redux-devtools": "3.4.0"
+    "ajv": "6.4.0",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "prop-types": "15.6.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-redux": "5.0.7",
+    "react-test-renderer": "16.3.2",
+    "redux": "4.0.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

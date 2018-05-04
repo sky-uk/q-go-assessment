@@ -16,7 +16,7 @@ describe('ItemCreator', () => {
     const renderedItem = mount(
       <ItemCreator {...defaultProps} onAdd={onAddMock} />
     );
-    renderedItem.find('.itemCreator-input').node.value = 'New Test Item';
+    renderedItem.find('.itemCreator-input').instance().value = 'New Test Item';
     renderedItem.find('.itemCreator-button').simulate('click');
     expect(onAddMock.mock.calls.length).toBe(1);
     expect(onAddMock.mock.calls[0][0]).toBe('New Test Item');
@@ -24,8 +24,8 @@ describe('ItemCreator', () => {
 
   it('should clear the input onAdd', () => {
     const renderedItem = mount(<ItemCreator {...defaultProps} />);
-    renderedItem.find('.itemCreator-input').node.value = 'New Test Item';
+    renderedItem.find('.itemCreator-input').instance().value = 'New Test Item';
     renderedItem.find('.itemCreator-button').simulate('click');
-    expect(renderedItem.find('.itemCreator-input').node.value).toEqual('');
+    expect(renderedItem.find('.itemCreator-input').instance().value).toEqual('');
   });
 });
