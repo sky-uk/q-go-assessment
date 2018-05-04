@@ -3,7 +3,7 @@ import { shallow, mount } from 'enzyme';
 import { ItemCreator } from '../index';
 
 const defaultProps = {
-  onAdd: f => f,
+  onAdd: (f) => f,
 };
 
 describe('ItemCreator', () => {
@@ -14,7 +14,7 @@ describe('ItemCreator', () => {
   it('should call onAdd with the input content', () => {
     const onAddMock = jest.fn();
     const renderedItem = mount(
-      <ItemCreator {...defaultProps} onAdd={onAddMock} />
+      <ItemCreator {...defaultProps} onAdd={onAddMock} />,
     );
     renderedItem.find('.itemCreator-input').instance().value = 'New Test Item';
     renderedItem.find('.itemCreator-button').simulate('click');
@@ -26,6 +26,8 @@ describe('ItemCreator', () => {
     const renderedItem = mount(<ItemCreator {...defaultProps} />);
     renderedItem.find('.itemCreator-input').instance().value = 'New Test Item';
     renderedItem.find('.itemCreator-button').simulate('click');
-    expect(renderedItem.find('.itemCreator-input').instance().value).toEqual('');
+    expect(renderedItem.find('.itemCreator-input').instance().value).toEqual(
+      '',
+    );
   });
 });

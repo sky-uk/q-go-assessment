@@ -1,6 +1,6 @@
 export const ADD_ITEM = 'qgo/assessment/ADD_ITEM';
 
-export const addItem = content => {
+export const addItem = (content) => {
   return { type: ADD_ITEM, content };
 };
 

@@ -10,7 +10,7 @@ export const ItemCreator = ({ onAdd }) => {
   return (
     <div className="itemCreator">
       <input
-        ref={input => {
+        ref={(input) => {
           inputField = input;
         }}
         className="itemCreator-input"
@@ -34,8 +34,8 @@ ItemCreator.propTypes = {
   onAdd: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => ({
-  onAdd: newItem => dispatch(addItem(newItem)),
+const mapDispatchToProps = (dispatch) => ({
+  onAdd: (newItem) => dispatch(addItem(newItem)),
 });
 
 export default connect(null, mapDispatchToProps)(ItemCreator);
