@@ -8,7 +8,7 @@ export const ItemsList = ({ items }) => {
     <div>
       <ul className="itemsList-ul">
         {items.length < 1 && <p id="items-missing">Add some tasks above.</p>}
-        {items.map(item => <li key={item.id}>{item.content}</li>)}
+        {items.map((item) => <li key={item.id}>{item.content}</li>)}
       </ul>
     </div>
   );
@@ -18,7 +18,7 @@ ItemsList.propTypes = {
   items: PropTypes.array.isRequired,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return { items: state.todos.items };
 };
 
